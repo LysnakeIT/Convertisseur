@@ -1,7 +1,7 @@
 ---
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/LysnakeIT/Convertisseur/blob/main/public/images/Convertisseur.png">
+  <img width="400" height="150" src="https://github.com/LysnakeIT/Convertisseur/blob/main/public/images/convertisseur.png">
 </p>
 
 ---
@@ -14,14 +14,13 @@
 
 
 ## Table des matières
-* [Informations générales](#informations-gnrales)
-* [Technologies utilisées](#technologies-utilises)
-* [Fonctionnalités futures](#fonctionnalits-futures)
+* [Informations générales](#informations-générales)
+* [Technologies utilisées](#technologies-utilisées)
+* [Fonctionnalités futures](#fonctionnalités-futures)
 * [Screenshots](#screenshots)
 * [Installation](#installation)
 * [Lancement application](#lancement-application)
 * [Contributeurs](#contributeurs)
-* [Contact](#contact)
 
 ---
 
@@ -51,7 +50,7 @@ La liste des futures fonctionnalités:
 
 - Télécharger le projet 
 ```bash
-git clone 
+git clone https://github.com/LysnakeIT/Convertisseur.git
 ```
 
 - Ensuite, ouvrez un terminal à l'endroit où le projet a été cloné, puis faites.
