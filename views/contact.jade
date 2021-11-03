@@ -1,0 +1,80 @@
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        title Convertisseur | Besoin de convertir, pas de soucis
+        meta(content='width=device-width, initial-scale=1.0' name='viewport')
+        link(rel='stylesheet' href='stylesheets/style.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all')
+    body.home.page.page-template.page-template-template-portfolio.page-template-template-portfolio-php
+        #page
+            .container-contact
+                header#masthead.site-header
+                    .site-branding
+                        h1.site-title
+                            a(href='/' rel='home') Convertisseur
+                        h2.site-description Besoin de convertir, pas de soucis
+                    nav#site-navigation.main-navigation
+                        button.menu-toggle Menu
+                        a.skip-link.screen-reader-text(href='/') Aller au contenu
+                        .menu-menu-1-container
+                            ul#menu-menu-1.menu
+                                li
+                                    a(href='/') Home
+                                li
+                                    a(href='/about') A propos
+                                li
+                                    a(href='/') Convertisseurs
+                                    ul.sub-menu
+                                        li
+                                            a(href='/jpg') PNG vers JPG
+                                        li
+                                            a(href='/csv') JSON vers CSV
+                                        li
+                                            a(href='/gif') MP4 vers GIF
+                                        li
+                                            a(href='/webp') WEBP vers PNG
+                                li
+                                    a(href='/contact') Contact
+                #content.site-content
+                    #primary.content-area.column.full
+                        main#main.site-main
+                            article#post-39.post-39.page.type-page.status-publish.hentry
+                                header.entry-header
+                                    h1.entry-title Contact
+                                .entry-content
+                                    p
+                                        script(src='https://maps.googleapis.com/maps/api/js?v=3.exp')
+                                    div(style='overflow:hidden;height:380px;width:100%;')
+                                        #gmap_canvas(style='height:380px;width:100%;')
+                                        div embed google maps
+                                        style.
+                                            #gmap_canvas img{max-width:none!important;background:none!important}
+                                    p
+                                        script(type='text/javascript').
+                                            function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(47.6445138021493, -2.776635140441789),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.6445138021493, -2.776635140441789)});infowindow = new google.maps.InfoWindow({content:'<strong>LysnakeIT</strong><br />Vannes<br />'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+                                    .wpcmsdev-columns
+                                        .column.column-width-one-half
+                                            h4 Formulaire de contact
+                                            .contact_form
+                                                form#contactform.wpcf7(method='post' action='/contact')
+                                                    .contact
+                                                        p
+                                                            input(type='text' name='name' placeholder='Nom *' disabled=)
+                                                        p
+                                                            input(type='text' name='email' placeholder='Adresse email *' disabled)
+                                                        p
+                                                            textarea(name='comment' rows='3' placeholder='Message *' disabled)
+                                                        input#submit.clearfix.btn(type='submit' value='Envoyer' disabled)
+                                            .done
+                                                | Le message a été envoyé
+                                        .column.column-width-one-half
+                                            h4 Plus d'infos ici
+                                            p
+                                                | ici
+                                            p
+                                                | Quand je dors pas
+                                                br
+                                                | Quand je dors pas
+                                                br
+                                                | Quand je dors pas

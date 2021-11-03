@@ -1,0 +1,83 @@
+---
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/LysnakeIT/Convertisseur/blob/main/public/images/Convertisseur.png">
+</p>
+
+---
+# Convertisseur (Convertisseur web)
+> Convertisseur est une application web local permettant de convertir certains types de fichier vers un autre type, tels que la conversion de :
+> - PNG --> JPG
+> - WEBP --> PNG
+> - MP4 --> GIF
+> - JSON --> CSV
+
+
+## Table des matières
+* [Informations générales](#informations-gnrales)
+* [Technologies utilisées](#technologies-utilises)
+* [Fonctionnalités futures](#fonctionnalits-futures)
+* [Screenshots](#screenshots)
+* [Installation](#installation)
+* [Lancement application](#lancement-application)
+* [Contributeurs](#contributeurs)
+* [Contact](#contact)
+
+---
+
+## Informations générales
+- Le projet n'est pas terminé, il reste des bugs, et il faut implémenter de nouveaux convertisseurs
+- L'application web est en ligne ici :
+- Il est possible qu'en fonction de la résolution d'écran le site soit bogué
+
+## Technologies utilisées
+Ce projet utilise plusieurs technologies :
+- [Express.js](https://expressjs.com/fr/) - Framework application web
+- [Jade/Pug](https://pugjs.org/api/getting-started.html) - Moteur de template
+- [Node.js](https://nodejs.org/fr/) - Environnement d’exécution
+
+## Fonctionnalités futures
+La liste des futures fonctionnalités:
+- Fusionner PDF
+- Convertisseur PowerPoint en PDF
+- Convertisseur Excel en PDF
+
+## Screenshots
+![Home](./public/images/home.png)
+![csv](./public/images/csv.png)
+![contact](./public/images/contact.png)
+
+## Installation
+
+- Télécharger le projet 
+```bash
+git clone 
+```
+
+- Ensuite, ouvrez un terminal à l'endroit où le projet a été cloné, puis faites.
+```bash
+sh ./install.sh
+```
+
+- Ensuite, nous allons installer le projet, pour ce faire faites les commandes ci-dessous.
+``` bash
+$ cd convert
+$ npm install
+$ cd ..
+$ npm install
+```
+
+## Lancement application
+- Afin de lancer l'application web, vous devez ouvrir un terminal et vous rendre au niveau de ce README.
+- Ensuite taper cette commande dans votre terminal.
+
+```bash
+$ npm start
+```
+
+- Ensuite rendez-vous à cette adresse : http://localhost:3000/
+
+Pour fermer l'application web retourné dans votre terminal et faites : ``Ctrl+C``
+
+## Contributeurs
+- [@KiwiOnIT](https://github.com/KiwiOnIT) - Réalisation des logos de conversion pour la page d'accueil
