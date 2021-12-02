@@ -26,11 +26,15 @@ html(lang='fr')
                 li
                   a(href='/jpg') PNG vers JPG
                 li
+                  a(href='/png') JPG vers PNG
+                li
                   a(href='/csv') JSON vers CSV
                 li
                   a(href='/gif') MP4 vers GIF
                 li
                   a(href='/webp') WEBP vers PNG
+                li
+                  a(href='/fusion') Fusionner des PDF
             li
               a(href='/contact') Contact
   body
@@ -51,8 +55,8 @@ html(lang='fr')
                   p
                     | Convertissez facilement vos images PNG en format JPG.
             .tools__item
-              .badge.badge--pasdispo PAS DISPONIBLE !
-              a(href='/' title='JPG en PNG')
+              .badge.badge--new Nouveau !
+              a(href='/png' title='JPG en PNG')
                 .tools__item__icon
                   img(alt='jpgtopng' src='/images/JPG_to_PNG.png', width='50', height='50')
                 h3 JPG en PNG
@@ -93,7 +97,16 @@ html(lang='fr')
                   p
                     | Convertissez facilement vos fichiers WEBP en image PNG.
             .tools__item
-              .badge.badge--new SOON !
+              .badge.badge--new Nouveau !
+              a(href='/fusion' title='Fusionner vos PDF')
+                .tools__item__icon
+                  img(alt='soon' src='/images/soon.png', width='50', height='50')
+                h3 Fusionner vos PDF
+                .tools__item__content
+                  p
+                    | Fusionner facilement plusieurs fichiers PDF en un seul fichier.
+            .tools__item
+              .badge.badge--soon SOON !
               a(href='/' title='Pas défini')
                 .tools__item__icon
                   img(alt='soon' src='/images/soon.png', width='50', height='50')
@@ -102,7 +115,7 @@ html(lang='fr')
                   p
                     | Pas défini
             .tools__item
-              .badge.badge--new SOON !
+              .badge.badge--soon SOON !
               a(href='/' title='Pas défini')
                 .tools__item__icon
                   img(alt='soon' src='/images/soon.png', width='50', height='50')
@@ -111,7 +124,7 @@ html(lang='fr')
                   p
                     | Pas défini
             .tools__item
-              .badge.badge--new SOON !
+              .badge.badge--soon SOON !
               a(href='/' title='Pas défini')
                 .tools__item__icon
                   img(alt='soon' src='/images/soon.png', width='50', height='50')
@@ -120,16 +133,7 @@ html(lang='fr')
                   p
                     | Pas défini
             .tools__item
-              .badge.badge--new SOON !
-              a(href='/' title='Pas défini')
-                .tools__item__icon
-                  img(alt='soon' src='/images/soon.png', width='50', height='50')
-                h3 Pas défini
-                .tools__item__content
-                  p
-                    | Pas défini
-            .tools__item
-              .badge.badge--new SOON !
+              .badge.badge--soon SOON !
               a(href='/' title='Pas défini')
                 .tools__item__icon
                   img(alt='soon' src='/images/soon.png', width='50', height='50')

@@ -12,6 +12,8 @@ var gifRouter = require('./routes/gif');
 var webpRouter = require('./routes/webp');
 var contactRouter = require('./routes/contact');
 var aboutRouter = require('./routes/about');
+var fusionRouter = require('./routes/fusion');
+var pngRouter = require('./routes/png');
 
 var app = express();
 const PORT = process.env.PORT || 3000;
@@ -35,6 +37,8 @@ app.use('/jpg', jpgRouter);
 app.use('/csv', csvRouter);
 app.use('/gif',gifRouter);
 app.use('/webp',webpRouter);
+app.use('/fusion',fusionRouter);
+app.use('/png',pngRouter);
 app.use('/contact',contactRouter);
 app.use('/about',aboutRouter);
 

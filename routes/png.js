@@ -14,7 +14,7 @@ function asyncMiddleware(fn) {
     }
 }
 
-/* Affiche la view jpg */
+/* Affiche la view png */
 router.get('/', function(req, res, next) {
     res.render('png', { title: 'Convertisseur'});
 });
@@ -28,7 +28,7 @@ router.post('/', asyncMiddleware(async (req, res, next) => {
     const name = file.name.split(".");
     let newPath = process.cwd() + "/download/" + name[0] + ".png"; // On récupère le chemin de notre dossier qui va jouer le role de stockage avent l'upload vers l'utilisateur (temporaire)
     await png_jpg.convert(path, newPath); // On convertit le fichier
-    res.redirect('/jpg/download')
+    res.redirect('/png/download')
 }));
 
 /* On envoie le fichier à l'utilisateur */

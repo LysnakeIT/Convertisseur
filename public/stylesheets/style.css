@@ -224,6 +224,18 @@ a {
     top: 10px;
 }
 
+.badge--soon {
+    border: 1px solid #ffd000;
+    color: rgb(255, 187, 0);
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+    top: 10px;
+}
+
 .badge {
     padding: 0 10px 2px;
     border-radius: 8px;

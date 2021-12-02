@@ -26,9 +26,9 @@ html(lang='fr')
                                 li
                                     a(href='/jpg') PNG vers JPG
                                 li
-                                    a(href='/png') JPG vers PNG
+                                    a(href='/csv') JSON vers CSV
                                 li
-                                    a(href='/csv') JSON vers  CSV
+                                    a(href='/gif') MP4 vers GIF
                                 li
                                     a(href='/webp') WEBP vers PNG
                                 li
@@ -39,19 +39,19 @@ html(lang='fr')
         .header
             .main
                 .home-title
-                    h1.title Voici l'outil vous permettant de transformer vos fichiers .mp4 en fichier .gif
+                    h1.title Voici l'outil vous permettant de transformer vos fichiers .JPG en fichier .PNG
                     h2.subtitle
                         | Pour utiliser cet outil c'est très simple, veuillez cliquer sur le bouton ci-dessous ensuite choisissez le fichier à convertir (on ne peut qu'en convertir un par un), puis attendez quelques secondes (plus le fichier est volumineux, plus l'attente est longue), ensuite vous recevez votre fichier convertit. Vous pouvez de nouveau re-convertir un fichier ou alors allez voir un de nos autres outils de conversion.
                 .form__tools
                     .form__container
-                        form#upload(action='/gif', method='POST', enctype='multipart/form-data')
+                        form#upload(action='/png', method='POST', enctype='multipart/form-data')
                             label#pickfiles.uploader__btn(for='fileUpload' title='Ajouter un fichier')
                                 svg(xmlns='http://www.w3.org/2000/svg' width='20' height='20' stroke-linecap='round' stroke-width='2' stroke='#fff' fill='none' stroke-linejoin='round')
                                     desc Téléchargez votre fichier et transformez-le.
                                     path(d='M10 1.833v16.333')
                                     path(d='M1.833 10h16.333')
-                                    span Sélectionner le fichier MP4
-                            input#fileUpload(type='file', name='fileUpload' onchange='this.form.submit()', hidden='' accept='.mp4')
+                                    span Sélectionner le fichier JPG
+                            input#fileUpload(type='file', name='fileUpload' onchange='this.form.submit()', hidden='' accept='.jpg')
     footer#colophon.site-footer
         .container
             .site-info
