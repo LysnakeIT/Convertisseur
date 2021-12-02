@@ -8,9 +8,11 @@
 # Convertisseur (Convertisseur web)
 > Convertisseur est une application web local permettant de convertir certains types de fichier vers un autre type, tels que la conversion de :
 > - PNG --> JPG
+> - JPG --> PNG
 > - WEBP --> PNG
 > - MP4 --> GIF
 > - JSON --> CSV
+> - Fusionner plusieurs PDF --> un seul PDF
 
 
 ## Table des matières
@@ -37,7 +39,6 @@ Ce projet utilise plusieurs technologies :
 
 ## Fonctionnalités futures
 La liste des futures fonctionnalités:
-- Fusionner PDF
 - Convertisseur PowerPoint en PDF
 - Convertisseur Excel en PDF
 
