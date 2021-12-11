@@ -51,12 +51,12 @@ La liste des futures fonctionnalités:
 
 - Télécharger le projet 
 ```bash
-git clone https://github.com/LysnakeIT/Convertisseur.git
+$ git clone https://github.com/LysnakeIT/Convertisseur.git
 ```
 
 - Ensuite, ouvrez un terminal à l'endroit où le projet a été cloné, puis faites.
 ```bash
-sh ./install.sh
+$ sh ./install.sh
 ```
 
 - Ensuite, nous allons installer le projet, pour ce faire faites les commandes ci-dessous.
