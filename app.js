@@ -14,6 +14,7 @@ var contactRouter = require('./routes/contact');
 var aboutRouter = require('./routes/about');
 var fusionRouter = require('./routes/fusion');
 var pngRouter = require('./routes/png');
+var encryptRouter = require('./routes/encrypt');
 
 var app = express();
 const PORT = process.env.PORT || 3000;
@@ -41,6 +42,7 @@ app.use('/fusion',fusionRouter);
 app.use('/png',pngRouter);
 app.use('/contact',contactRouter);
 app.use('/about',aboutRouter);
+app.use('/encrypt',encryptRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
