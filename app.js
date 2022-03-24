@@ -10,8 +10,6 @@ var jpgRouter = require('./routes/jpg');
 var csvRouter = require('./routes/csv');
 var gifRouter = require('./routes/gif');
 var webpRouter = require('./routes/webp');
-var contactRouter = require('./routes/contact');
-var aboutRouter = require('./routes/about');
 var fusionRouter = require('./routes/fusion');
 var pngRouter = require('./routes/png');
 var encryptRouter = require('./routes/encrypt');
@@ -40,8 +38,6 @@ app.use('/gif',gifRouter);
 app.use('/webp',webpRouter);
 app.use('/fusion',fusionRouter);
 app.use('/png',pngRouter);
-app.use('/contact',contactRouter);
-app.use('/about',aboutRouter);
 app.use('/encrypt',encryptRouter);
 
 // catch 404 and forward to error handler
