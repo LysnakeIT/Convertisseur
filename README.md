@@ -45,7 +45,6 @@ La liste des futures fonctionnalités:
 ## Screenshots
 ![Home](./public/images/home.png)
 ![csv](./public/images/csv.png)
-![contact](./public/images/contact.png)
 
 ## Installation
 
