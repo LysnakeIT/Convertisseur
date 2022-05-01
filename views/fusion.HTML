@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Convertisseur | Besoin de convertir, pas de soucis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <div class="container">
+    <header class="site-header" id="masthead">
+      <div class="site-branding">
+        <h1 class="site-title"><a href="/" rel="home">Convertisseur</a></h1>
+        <h2 class="site-description">Besoin de convertir, pas de soucis</h2>
+      </div>
+      <nav class="main-navigation" id="site-navigation">
+        <button class="menu-toggle">Menu</button><a class="skip-link screen-reader-text" href="/">Aller au contenu</a>
+        <div class="menu-menu-1-container">
+          <ul class="menu nav-menu" id="menu-menu-1">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Convertisseurs</a>
+              <ul class="sub-menu">
+                <li><a href="/jpg">PNG vers JPG</a></li>
+                <li><a href="/png">JPG vers PNG</a></li>
+                <li><a href="/csv">JSON vers CSV</a></li>
+                <li><a href="/gif">MP4 vers GIF</a></li>
+                <li><a href="/webp">WEBP vers PNG</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <body>
+    <div class="header">
+      <div class="main">
+        <div class="home-title">
+          <h1 class="title">Voici l'outil vous permettant de fusionner vos fichiers .pdf en un seul fichier .pdf</h1>
+          <h2 class="subtitle">Pour utiliser cet outil c'est très simple, veuillez cliquer sur le bouton ci-dessous ensuite choisissez tous les fichier à fusionner (Sélectionner tous les fichiers à fusionner d'un coup), puis attendez quelques secondes (plus le fichier est volumineux, plus l'attente est longue), ensuite vous recevez votre fichier fusionné. Vous pouvez de nouveau re-fusionner des fichiers ou alors allez voir un de nos autres outils de conversion.</h2>
+        </div>
+        <div class="form__tools">
+          <div class="form__container">
+            <form id="upload" action="/fusion" method="POST" enctype="multipart/form-data">
+              <label class="uploader__btn" id="pickfiles" for="fileUpload" title="Ajouter un fichier">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-linecap="round" stroke-width="2" stroke="#fff" fill="none" stroke-linejoin="round">
+                  <desc>Téléchargez votre fichier et transformez-le.</desc>
+                  <path d="M10 1.833v16.333"></path>
+                  <path d="M1.833 10h16.333"></path><span>Sélectionner les fichiers PDF</span>
+                </svg>
+              </label>
+              <input id="fileUpload" type="file" name="fileUpload" onchange="this.form.submit()" hidden="" accept=".pdf" multiple>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="site-footer" id="colophon">
+    <div class="container">
+      <div class="site-info">
+        <h1 style="font-family: 'Herr Von Muellerhoff';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px">Convertisseur</h1><a target="blank" href="/">© Convertisseur - Site by LysnakeIT</a>
+      </div>
+    </div>
+  </footer>
+</html>
