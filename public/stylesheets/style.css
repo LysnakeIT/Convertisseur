@@ -86,29 +86,28 @@ a, a:hover, a:focus, a:active, a:link, a:visited {
 
 .btn-def {
     display: inline-flex;
-    background: #e5322d;
     padding: 24px 56px;
     font-weight: 600;
     font-size: 28px;
     line-height: 32px;
-    color: #fff;
-    margin-bottom: 12px;
     border-radius: 8px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 14%);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+   background-color: #ad074a !important;
 }
 
 .btn-secondary {
     color: #fff !important;
     background-color: hsl(336, 88%, 45%) !important;
-    border-color: hsl(336, 88%, 45%) mportant;
+    border-color: hsl(336, 88%, 45%) !Important;
 }
 
 .btn-secondary svg, .btn-secondary svg {
     display: none;
-}
+} 
 
 .rounded-10 {
     border-radius: 1rem;
