@@ -1,11 +1,11 @@
 ---
 
 <p align="center">
-  <img width="400" height="150" src="https://github.com/LysnakeIT/Convertisseur/blob/main/public/images/convertisseur.png">
+  <img width="400" height="150" src="https://github.com/LysnakeIT/Convertisseur/blob/main/public/images/contact.png">
 </p>
 
 ---
-# Convertisseur (Convertisseur web)
+# Convertisseur (Application web)
 > Convertisseur est une application web local permettant de convertir certains types de fichier vers un autre type, tels que la conversion de :
 > - PNG --> JPG
 > - JPG --> PNG
