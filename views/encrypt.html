@@ -19,17 +19,20 @@
       <div class="col-md-6">
         <div class="d-flex align-items-center justify-content-center vh-100">
           <div class="text-center">
-            <h1>Voici l'outil vous permettant de transformer vos fichiers .webp en fichier .png</h1>
-            <p class="lead text-white"> Pour utiliser cet outil c'est très simple, veuillez cliquer sur le bouton ci-dessous ensuite choisissez le fichier à convertir (on ne peut qu'en convertir un par un), puis attendez quelques secondes (plus le fichier est volumineux, plus l'attente est longue), ensuite vous recevez votre fichier convertit. Vous pouvez de nouveau re-convertir un fichier ou alors allez voir un de nos autres outils de conversion.</p>
-            <form id="upload" action="/webp" method="POST" enctype="multipart/form-data">
+            <h1>Voici l'outil vous permettant de mettre un mot de passe à votre PDF</h1>
+            <p class="lead text-white">Pour utiliser cet outil c'est très simple, veuillez mettre un MOT DE PASSE (vous pouvez en générer un ici <a class="link-info" href="https://passly.vercel.app/">https://passly.vercel.app/</a> puis cliquer sur le bouton ci-dessous ensuite choisissez le fichier à protéger (on ne peut qu'en protéger un par un), puis attendez quelques secondes (plus le fichier est volumineux, plus l'attente est longue), ensuite vous recevez votre fichier pdf protégé par le mot de passe. Vous pouvez de nouveau re-protéger un fichier ou alors allez voir un de nos autres outils de conversion.</p>
+            <form id="upload" action="/encrypt" method="POST" enctype="multipart/form-data">
+              <div class="row mx-3 mb-3 mt-3">
+                <input id="name" type="text" name="fName" required="" placeholder="Le mot de passe">
+              </div>
               <label class="btn-secondary btn-def" id="pickfiles" for="fileUpload" title="Ajouter un fichier">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-linecap="round" stroke-width="2" stroke="#fff" fill="none" stroke-linejoin="round">
                   <desc>Téléchargez votre fichier et transformez-le.</desc>
                   <path d="M10 1.833v16.333"></path>
-                  <path d="M1.833 10h16.333"></path><span>Sélectionner le fichier WEBP</span>
+                  <path d="M1.833 10h16.333"></path><span>Sélectionner le fichier PDF</span>
                 </svg>
               </label>
-              <input id="fileUpload" type="file" name="fileUpload" onchange="this.form.submit()" hidden="" accept=".webp">
+              <input id="fileUpload" type="file" name="fileUpload" onchange="this.form.submit()" hidden="" accept=".pdf">
             </form>
           </div>
         </div>

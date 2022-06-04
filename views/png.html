@@ -1,47 +1,28 @@
-<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
     <title>Convertisseur | Besoin de convertir, pas de soucis</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
-  <div class="container">
-    <header class="site-header" id="masthead">
-      <div class="site-branding">
-        <h1 class="site-title"><a href="/" rel="home">Convertisseur</a></h1>
-        <h2 class="site-description">Besoin de convertir, pas de soucis</h2>
-      </div>
-      <nav class="main-navigation" id="site-navigation">
-        <button class="menu-toggle">Menu</button><a class="skip-link screen-reader-text" href="/">Aller au contenu</a>
-        <div class="menu-menu-1-container">
-          <ul class="menu nav-menu" id="menu-menu-1">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Convertisseurs</a>
-              <ul class="sub-menu">
-                <li><a href="/jpg">PNG vers JPG</a></li>
-                <li><a href="/csv">JSON vers CSV</a></li>
-                <li><a href="/gif">MP4 vers GIF</a></li>
-                <li><a href="/webp">WEBP vers PNG</a></li>
-                <li><a href="/fusion">Fusionner des PDF</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </div>
   <body>
-    <div class="header">
-      <div class="main">
-        <div class="home-title">
-          <h1 class="title">Voici l'outil vous permettant de transformer vos fichiers .JPG en fichier .PNG</h1>
-          <h2 class="subtitle">Pour utiliser cet outil c'est très simple, veuillez cliquer sur le bouton ci-dessous ensuite choisissez le fichier à convertir (on ne peut qu'en convertir un par un), puis attendez quelques secondes (plus le fichier est volumineux, plus l'attente est longue), ensuite vous recevez votre fichier convertit. Vous pouvez de nouveau re-convertir un fichier ou alors allez voir un de nos autres outils de conversion.</h2>
-        </div>
-        <div class="form__tools">
-          <div class="form__container">
+    <button type="button" class="btn btn-danger btn-floating btn-lg back-button" onclick="window.location.href='/'">
+      <i class="bi bi-house-fill"></i>
+    </button>
+    <div class="row d-flex justify-content-center mx-3">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-center vh-100">
+          <div class="text-center">
+            <h1>Voici l'outil vous permettant de transformer vos fichiers .JPG en fichier .PNG</h1>
+            <p class="lead text-white">Pour utiliser cet outil c'est très simple, veuillez cliquer sur le bouton ci-dessous ensuite choisissez le fichier à convertir (on ne peut qu'en convertir un par un), puis attendez quelques secondes (plus le fichier est volumineux, plus l'attente est longue), ensuite vous recevez votre fichier convertit. Vous pouvez de nouveau re-convertir un fichier ou alors allez voir un de nos autres outils de conversion.</p>
             <form id="upload" action="/png" method="POST" enctype="multipart/form-data">
-              <label class="uploader__btn" id="pickfiles" for="fileUpload" title="Ajouter un fichier">
+              <label class="btn-secondary btn-def" id="pickfiles" for="fileUpload" title="Ajouter un fichier">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-linecap="round" stroke-width="2" stroke="#fff" fill="none" stroke-linejoin="round">
                   <desc>Téléchargez votre fichier et transformez-le.</desc>
                   <path d="M10 1.833v16.333"></path>
@@ -55,11 +36,4 @@
       </div>
     </div>
   </body>
-  <footer class="site-footer" id="colophon">
-    <div class="container">
-      <div class="site-info">
-        <h1 style="font-family: 'Herr Von Muellerhoff';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px">Convertisseur</h1><a target="blank" href="/">© Convertisseur - Site by LysnakeIT</a>
-      </div>
-    </div>
-  </footer>
 </html>

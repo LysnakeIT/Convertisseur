@@ -13,6 +13,7 @@
 > - MP4 --> GIF
 > - JSON --> CSV
 > - Fusionner plusieurs PDF --> un seul PDF
+> - Mettre un mot de passe à un PDF
 
 
 ## Table des matières
@@ -28,17 +29,18 @@
 
 ## Informations générales
 - Le projet n'est pas terminé, il reste des bugs, et il faut implémenter de nouveaux convertisseurs
-- L'application web est en ligne ici :
+- L'application web est en ligne ici : https://convertisseur-org.herokuapp.com/
 - Il est possible qu'en fonction de la résolution d'écran le site soit bogué
 
 ## Technologies utilisées
 Ce projet utilise plusieurs technologies :
 - [Express.js](https://expressjs.com/fr/) - Framework application web
-- [Jade/Pug](https://pugjs.org/api/getting-started.html) - Moteur de template
+- [Html](https://developer.mozilla.org/fr/docs/Web/HTML) - Moteur de template
 - [Node.js](https://nodejs.org/fr/) - Environnement d’exécution
 
 ## Fonctionnalités futures
 La liste des futures fonctionnalités:
+- Convertisseur PDF en Word
 - Convertisseur PowerPoint en PDF
 - Convertisseur Excel en PDF
 
