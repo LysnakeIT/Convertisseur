@@ -102,7 +102,7 @@ a, a:hover, a:focus, a:active, a:link, a:visited {
 .btn-secondary {
     color: #fff !important;
     background-color: hsl(336, 88%, 45%) !important;
-    border-color: hsl(336, 88%, 45%) !Important;
+    border-color: hsl(336, 88%, 45%) !important;
 }
 
 .btn-secondary svg, .btn-secondary svg {
