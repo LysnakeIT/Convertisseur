@@ -14,6 +14,8 @@ var webpRouter = require('./routes/webp');
 var fusionRouter = require('./routes/fusion');
 var pngRouter = require('./routes/png');
 var encryptRouter = require('./routes/encrypt');
+var icoRouter = require('./routes/ico');
+
 
 var app = express();
 const PORT = process.env.PORT || 3000;
@@ -41,6 +43,7 @@ app.use('/webp',webpRouter);
 app.use('/fusion',fusionRouter);
 app.use('/png',pngRouter);
 app.use('/encrypt',encryptRouter);
+app.use('/ico', icoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

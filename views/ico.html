@@ -1,0 +1,40 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Convertisseur | Besoin de convertir, pas de soucis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" href="/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <button type="button" class="btn btn-danger btn-floating btn-lg back-button" onclick="window.location.href='/'">
+      <i class="bi bi-house-fill"></i>
+    </button>
+    <div class="row d-flex justify-content-center mx-3">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-center vh-100">
+          <div class="text-center">
+            <h1>Voici l'outil vous permettant de transformer vos fichiers .png en fichier .ico</h1>
+            <p class="lead text-white">Pour utiliser cet outil c'est très simple, veuillez cliquer sur le bouton ci-dessous ensuite choisissez le fichier à convertir (on ne peut qu'en convertir un par un), puis attendez quelques secondes (plus le fichier est volumineux, plus l'attente est longue), ensuite vous recevez votre fichier convertit. Vous pouvez de nouveau re-convertir un fichier ou alors allez voir un de nos autres outils de conversion.</p>
+            <form id="upload" action="/ico" method="POST" enctype="multipart/form-data" class="d-flex justify-content-center">
+              <label class="btn-secondary btn-def" id="pickfiles" for="fileUpload" title="Ajouter un fichier">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-linecap="round" stroke-width="2" stroke="#fff" fill="none" stroke-linejoin="round">
+                  <desc>Téléchargez votre fichier et transformez-le.</desc>
+                  <path d="M10 1.833v16.333"></path>
+                  <path d="M1.833 10h16.333"></path><span class="d-flex justify-content-center">Sélectionner le fichier PNG</span>
+                </svg>
+              </label>
+              <input id="fileUpload" type="file" name="fileUpload" onchange="this.form.submit()" hidden="" accept=".png">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
