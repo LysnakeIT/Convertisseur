@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
 /* Récupère le fichier fournit et le convertit puis le stocke localement de facon temporaire*/
 router.post('/', asyncMiddleware(async (req, res, next) => {
     const file = req.files.fileUpload;
-    const path = process.cwd() + "/test/" + file.name; // On récupère le chemin de notre dossier qui va jouer le role de stockage locale (temporaire)
+    const path = process.cwd() + "/temp/" + file.name; // On récupère le chemin de notre dossier qui va jouer le role de stockage locale (temporaire)
 
     await file.mv(path); // On met le fichier dans notre dossier
     const name = file.name.split(".");
